@@ -10,7 +10,7 @@ git clone -b phase0-helloworld https://github.com/GoogleCloudPlatform/appengine-
 ~~~
 
 ## app.yaml
-~~~
+~~~yaml
 runtime: php55
 api_version: 1
 threadsafe: true
