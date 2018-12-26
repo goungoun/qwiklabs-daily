@@ -1,16 +1,23 @@
 # App Engine Qwik Start
+> https://google.qwiklabs.com/catalog_lab/702
 
 ## Summary
-> App Engine을 통해 빠르게 applicatin을 배포를 테스트합니다.
-
-## Qwik Start - PHP
-~~~
-https://google.qwiklabs.com/catalog_lab/702
-~~~
+- App Engine을 통해 빠르게 applicatin을 배포를 테스트합니다.
 
 ## Source
 ~~~bash
 git clone -b phase0-helloworld https://github.com/GoogleCloudPlatform/appengine-php-guestbook.git helloworld
+~~~
+
+## app.yaml
+~~~
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /.*
+  script: helloworld.php
 ~~~
 
 ## Test
