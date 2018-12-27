@@ -1,10 +1,9 @@
 # Cloud IAM
-||info||desc||
-|Levels| introductory|
-|Permalink| https://www.qwiklabs.com/catalog_lab/686|
+- Levels: introductory
+- Permalink: https://www.qwiklabs.com/catalog_lab/686
 
 ## IAM
-- Viewer: (이 권한을 주면 프로젝트를 볼 수는 있지만 모든 버튼이 비활성화 되어있음)
+- Viewer: 프로젝트를 볼 수는 있지만 모든 버튼이 비활성화
 - Editor: +Viewer에 수정까지 할 수 있는 권한
 - Owner: +Editor 역할 관리까지 할수 있는 권한
 - Browser: Viewer하고 비슷한데 folder, 조직, IAM 정책도 볼 수 있는 권한
@@ -23,4 +22,7 @@
 ~~~bash
 gsutil ls gs://gcp_test_sksdjdjsjs
 gs://gcp_test_sksdjdjsjs/sample.txt
-~~~ 
+~~~
+
+## Comment
+- Viewer는 프로젝트의 메뉴를 볼 수 만 있고 아무 것도 할 수 없는데 실무에서 어떤 용도로 사용하는지?
