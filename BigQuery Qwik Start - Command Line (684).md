@@ -47,14 +47,13 @@ Table bigquery-public-data:samples.shakespeare
                     |- corpus: string (required)
                     |- corpus_date: integer (required)
 ~~~
-> comment: 스키마를 보는 명령어에서 total rows가 표시되는데 항상 정확한 것일까? 어떻게 항상 정확한 통계를 유지할 수 있나?  
-
+> 스키마를 보는 명령어에서 total rows가 표시되는데 항상 정확한 것일까? 어떻게 항상 정확한 통계를 유지할 수 있나?  
 
 ## Test
 - You can access BigQuery using: Command line tool(bq), Web UI, BigQuery REST API
 - Which CLI tool is use to interact with BigQuery service? bq
 
-## comment
+## Comment
 - 빅쿼리의 dataset은 테이블 여러개를 묶어놓은 역할. Spark의 dataset과 개념이 많이 다름. 
 - 쿼리를 실행할 때마다 shell로 로그인/로그아웃하는 것을 반복하지 않아도 됨
 ~~~
@@ -69,4 +68,4 @@ SELECT word, corpus, COUNT(word) FROM \`bigquery-public-data.samples.shakespeare
 WHERE word LIKE '%raisin%' GROUP BY word, corpus"
 ~~~
 > 결과를 가져오는 쿼리에서도 역시 row 수는 반환이 안됨. 
-> `bigquery-public-data:samples.shakespeare` 와 같은 표현 방식에서 project를 구분할 때 :을 사용하기 때문에 매번 back quote로 묶어줘야 하는 부분이 정말 불편함. 
+> `bigquery-public-data:samples.shakespeare` 와 같은 표현 방식에서 project를 구분할 때 :을 사용하기 때문에 매번 `로 묶어줘야 하는 부분이 정말 불편한데 sql 안에서 쓰려면 역 슬래시로 한번 더 감싸줘야 해서 더 불편함. syntax를 설계할 때 :를 넣은 것은 정말 잘못한것 같음.
