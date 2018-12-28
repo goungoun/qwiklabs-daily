@@ -99,3 +99,4 @@ LIMIT 100
 ## Comment
 - 프로젝트명으로 버켓을 만드는 이유는 Dataflow를 생성할 때 임시데이터를 저장하는 설정으로 사용
 - 그러면 DataFlow 사용 시에는 항상 버켓을 만들어야 하는 것인가?
+- `gcloud beta iot`라고 되어있는데 iot는 beta인가?
