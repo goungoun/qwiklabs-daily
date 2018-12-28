@@ -6,7 +6,6 @@
 - Node.js로 hello world를 출력하는 서버를 만들고 (v.1.0)
 - hello world를 hello cloud로 바꿔서 2.0버전으로 업그레이드 하는 예제
 - 도커 사용 관련 필수 명령어
-`docker hub` `Dockerfile` `gcr.io`
 ~~~bash
 docker run hello-world
 docker run --name [container-name] hello-world.
@@ -21,11 +20,13 @@ docker tag node-app:0.2 gcr.io/[project-id]/node-app:0.2
 gcloud docker -- push gcr.io/[project-id]/node-app:0.2
 ~~~
 > https://docs.docker.com/engine/reference/commandline/docker/
+- keyword
+`docker hub` `Dockerfile` `gcr.io`
 
 ## Hello World
 - Docker Hub public registry로부터 hello-world 컨테이너 이미지를 가져와서 실행
 - hello-world 컨테이너는 금방 종료되기 때문에 -a 옵션을 사용해서 Exited 된 컨테이너도 살펴본다.
-- hello-world 컨테이너의 NAME이 awesome_wing으로 랜덤으로 아무거나 표시가 되는데 이것을 지정해주려면 run 할 때 `--name` 옵션을 사용
+- hello-world 컨테이너의 NAME이 랜덤으로 아무거나 표시가 되는데 (여기서는 awesome_wing) 이것을 지정해주려면 run 할 때 `--name` 옵션을 사용
 ~~~bash
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
@@ -61,7 +62,7 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 5feb79bb6adb        node-app:0.1        "node app.js"       8 minutes ago       Up 8 minutes        0.0.0.0:4000->80/tcp   my-app
 ~~~
 - curl
-~~
+~~~
 $ curl http://0.0.0.0:4000
 Hello World
 $ curl http://0.0.0.0:80
