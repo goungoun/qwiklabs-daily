@@ -15,6 +15,7 @@ bq load babynames.names2010 yob2010.txt name:string,gender:string,count:integer
 bq show babynames.names2010
 bq query "select * from babynames.names2010"
 ~~~
+> 파티션 테이블을 만들어서 년도별 파일을 입력하는 방법은?
 
 ## BigQuery Public Dataset
 - `bq show bigquery-public-data:`
