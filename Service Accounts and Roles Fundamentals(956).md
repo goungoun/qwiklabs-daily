@@ -55,3 +55,13 @@ print(client.query(query).to_dataframe())
 ## Comment
 - 우리 회사 machine 계정인 ps계정이 이 체계와 비슷
 - vm에 service account 계정을 붙이는 것이 어떤 의미인가요? 해당 VM에서 접근 가능한 리소스를 통제하겠다는 의미인가요?
+> 퀵랩 초반부에 잘 설명되어 있음 
+~~~
+A service account is a special Google account that belongs to your application or a virtual machine (VM) instead of an individual end user. Your application uses the service account to call the Google API of a service, so that the users aren't directly involved.
+
+For example, a Compute Engine VM may run as a service account, and that account can be given permissions to access the resources it needs. This way the service account is the identity of the service, and the service account's permissions control which resources the service can access.
+
+A service account is identified by its email address, which is unique to the account.
+~~~
+- 그렇다면 위에 생성된 계정으로 붙어있는 VM에서는 BigQuery외에 GCP의 다른 서비스를 사용할 권한이 없음. 해당 VM에서 BigTable을 사용하고 싶은 경우는 service account쪽에 권한을 줘야 함
+- service account는 패스워드도 없고 GCP에 login하는 계정이 아닌데 어떻게 인증이 되는 것인지? VM에 접속할때도 password를 물어보지 않는데?
