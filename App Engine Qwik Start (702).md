@@ -2,7 +2,8 @@
 - Link https://google.qwiklabs.com/catalog_lab/702
 
 ## Summary
-- App Engine을 통해 빠르게 applicatin을 배포합니다.
+- App Engine을 통해 빠르게 applicatin을 배포
+- Keyword: `app.yaml` `gcloud app deploy` `dev_appserver.py`
 
 ## Source Code
 ~~~bash
