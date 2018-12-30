@@ -4,6 +4,7 @@
 
 ## Summary
 - Create a VM instance with multiple network interfaces (nic0, nic1, nic2..)
+- 새로 만든 VM에서 mynetwork, privanet, managementnet 내의 VM에 ping이 가는지 확인
 ![multiple_network_interfaces.png](./images/multiple_network_interfaces.png)
 - keywords:`vpc` `gcloud compute networks [create|subnets]`
 
@@ -45,6 +46,17 @@ privatesubnet-us     us-central1              privatenet     172.16.0.0/24
 ~~~
 $ gcloud compute --project=qwiklabs-gcp-9ace8700a6f2b235 firewall-rules create managementnet-allow-icmp-ssh-rdp --direction=INGRESS --priority=1000 --network=default --action=ALLOW --rules=tcp:22,tcp:3389,icmp --source-ranges=0.0.0.0/0
 $ gcloud compute firewall-rules list --sort-by=NETWORK
+~~~
+
+## VM with multiple network Interface
+- VPC 네트워크 인스턴스는 기본 network interface를 가지고 있다
+- VM에 network interface를 최대 8개까지 추가 가능
+~~~bash
+ping -c 3 <Enter privatenet-us-vm's internal IP here>
+ping -c 3 privatenet-us-vm
+ping -c 3 <Enter managementnet-us-vm's internal IP here>
+ping -c 3 <Enter mynet-us-vm's internal IP here>
+ping -c 3 <Enter mynet-eu-vm's internal IP here>
 ~~~
 
 ## Comment
