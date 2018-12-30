@@ -11,7 +11,11 @@
 - Keyword: `VPC` `subnets` `WAN` `ingress` `egress` `RFC 1918 CIDR`
 
 ## VPC
+- VPC 네트워크는 연결된 라우터와 방화벽 규칙을 포함하는 전역 리소스
 - VPC란 GCP에 의해 가상화되어 관리한다는 점 빼고는 물리적인 네트워크와 개념상으로 같음
+
+## Subnet
+- 각 서브넷은 IP 주소 범위를 정의하며 지역 리소스
 - 데이터 센터의 가상 subnet을 구성하고 Global WAN(wide area network)으로 연결
 
 ## Firewall rules
