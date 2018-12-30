@@ -83,6 +83,3 @@ ping -c 3 <Enter mynet-eu-vm's internal IP here>
 ## Comment
 - 처음 해 볼때는 UI가 편하고 이 예제와 같이 여러개를 한꺼번에 만들어야 하는 경우는 script를 사용하는 것이 편리
 
-
-
-
