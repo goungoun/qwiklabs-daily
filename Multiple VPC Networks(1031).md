@@ -82,4 +82,5 @@ ping -c 3 <Enter mynet-eu-vm's internal IP here>
 
 ## Comment
 - 처음 해 볼때는 UI가 편하고 이 예제와 같이 여러개를 한꺼번에 만들어야 하는 경우는 script를 사용하는 것이 편리
-
+- 여기에서 쓰는 VM은 ephemeral IP 라서 restart하면 ip가 바뀌는데 이 실습에서와 같은 fire wall rule을 적용하면  internal/external ip에 대한 ping의 응답 결과는 항상 같을지 궁금
+- VM을 여러개 만들어보았지만 숨어있는 공간에 여러 network를 연결할 수 있는 공간이 있는 것은 몰랐음
