@@ -3,7 +3,8 @@
 - Link: https://www.qwiklabs.com/catalog_lab/468
 
 ## Summary
-- 
+- Node.js를 사용하여 간단한 웹서버를 만들고 dokerizing하여 kubernetes에 배포해본다
+- 배포 후에 버전을 올려서 Roll out 방식 (기본)으로 배포해보고 replica 수도 줄이거나 늘려본다
 - Keyword: `Dockerfile` `gcr.io` `container registry` `kubernetes` `pod`
 
 ## Source
