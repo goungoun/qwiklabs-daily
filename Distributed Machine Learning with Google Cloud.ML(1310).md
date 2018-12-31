@@ -59,8 +59,7 @@ gcloud ml-engine jobs submit training $JOBNAME \
   --output_dir=$OUTPUT_DIR \
   --traindata $DATA_DIR/train* --evaldata $DATA_DIR/test*
 ~~~
-
-## Learning Rate
+> $(pwd) 주의. flights 상위디렉토리인지 확인해보고 실행하지 않으면 오류
 
 ## Trouble Shooting
 - job이 fail되어 다시 동일한 이름으로 돌릴 때 오류
@@ -71,7 +70,7 @@ ERROR: (gcloud.ml-engine.jobs.submit.training) Resource in project [qwiklabs-gcp
   - description: A job with this id already exists.
     field: job.job_id
 ~~~
-> 첫번째 실패: ML Engine 메뉴에서 fail 된 job을 rerun 할 수 없어서 처음부터 다시 재시작
+> 첫번째 실패: ML Engine 메뉴에서 fail 된 job을 rerun 할 수 없어서 처음부터 다시 재시작 <br>
 > 두번째 실패: 해결하기 위해서는 $JOBNAME을 다시 주고 돌
 려줌. 왜냐하면 점수 체크하는 로직이 dnn-*, wide-*와 같이 job 이름 중에 시작하는 이름으로 체크하도록 되어있기 때문
 -  파라미터 관련 오류
@@ -84,7 +83,6 @@ InvalidArgumentError (see above for traceback): GCS path doesn't contain a bucke
 export DATA_DIR=gs://${BUCKET}/flights/chapter8/output
 echo $DATA_DIR
 ~~~
-
 
 ## Comment
 - ml engine에서 환경변수를 사용하여 파라미터를 주는 부분에서 오류의 발생 가능성이 있기 때문에 JOB을 실행하기 전에 사용된 환경변수를 먼저 모두 체크하고 돌리는 것이 오류를 줄이는 방법임 (Sqoop 쓸 때의 악몽이..)
