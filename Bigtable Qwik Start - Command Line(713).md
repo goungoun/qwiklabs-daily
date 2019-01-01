@@ -58,3 +58,4 @@ $ cbt deletetable my-table
 1,593.50 per month (1,000 GB data, 3 nodes) 
 ~~~
 - cbt set 커맨드로 1row를 입력할 때 RDB처럼 빠르지는 않음. 5초 정도 소요
+- 모니터링 UI에 초당 읽기/쓰기, CPU 사용률 등을 확인할 수 있는데 기본 커맨드로는 살펴볼 수 있는 내용이 없고 workload를 생성하는 벤치마킹 도구가 필요
