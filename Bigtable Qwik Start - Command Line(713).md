@@ -59,3 +59,4 @@ $ cbt deletetable my-table
 ~~~
 - cbt set 커맨드로 1row를 입력할 때 RDB처럼 빠르지는 않음. 5초 정도 소요
 - 모니터링 UI에 초당 읽기/쓰기, CPU 사용률 등을 확인할 수 있는데 기본 커맨드로는 살펴볼 수 있는 내용이 없고 workload를 생성하는 벤치마킹 도구가 필요
+- Commandline interface로 HBase shell을 사용하는 다른 lab이 있는데 어떤 것을 사용하는 것이 좋은지 궁금함. HBase shell은 HBase와 호환된다?는 것을 보여주기 위한 예시인지?
