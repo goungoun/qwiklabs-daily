@@ -47,6 +47,7 @@ r1
     "test-value"
 $
 ~~~
+> 수억 건의 row가 들어있는 경우에도 cbt read my-table로 읽어도 되는 것일까? row key로 접근하는 예제가 없음
 - 삭제
 ~~~bash
 $ cbt deletetable my-table
