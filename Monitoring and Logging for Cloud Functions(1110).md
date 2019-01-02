@@ -14,7 +14,7 @@ exports.qwiklabsDemo = function qwiklabsDemo (req, res) {
   console.log(req.body.name);
 }
 ~~~
-> 생각보다 clou봄 function이 만들어지는 속도가 빠르지가 않고 체감상 cloud function이 생성되는 속도가 VM 만드는 속도나 kubernetes cluster가 만들어지는 속도와 비슷한것 같은 느낌은?
+> 생각보다 cloud function이 만들어지는 속도가 빠르지가 않고 체감상 VM 만드는 속도나 kubernetes cluster가 만들어지는 속도와 비슷한것 같은 느낌은?
 - testing tab에서 기능정도는 테스트 가능하지만 대규모 트래픽은 못 만듬
 ~~~json
 {"name":"Gounna"}
