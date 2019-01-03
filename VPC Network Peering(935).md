@@ -20,7 +20,7 @@ gcloud compute firewall-rules create network-a-fw --network network-a --allow tc
 
 - 2nd project:
 ~~~bash
-gcloud config set project <project 2> # 두 번쨰 프로젝트 ID 
+gcloud config set project <project 2> # 두 번째 프로젝트 ID 
 gcloud compute networks create network-b --subnet-mode custom
 gcloud compute networks subnets create network-b-central --network network-b \
     --range 10.8.0.0/16 --region us-central1
