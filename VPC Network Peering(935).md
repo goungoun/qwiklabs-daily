@@ -7,7 +7,7 @@
 - project-A에 NetworkA를 project-B에 networkB를 만들고 양방향으로 피어링한 후 project-B에 있는 vm에서 project-A에 있는 vm의 internal ip로 ping을 보내보는 방법으로 테스트
 ![peer-ab](https://gcpstaging-qwiklab-website-prod.s3.amazonaws.com/bundles/assets/6b7982c2748b1c1898a0626316a78fe24823ec781a63ced6f427af4c947478ae.png)
 
-# 네크워크 셋업
+## 네크워크 셋업 (준비작업)
 - 1st project: 서브넷을 custom으로 네트워크를 생성한다. subnet에 IP range를 주고 VM을 만들고 SSH로 접속할 수 있도록 SSH와 icmp를 활성화한다.
 ~~~bash
 gcloud config set project <PROJECT_ID2>
