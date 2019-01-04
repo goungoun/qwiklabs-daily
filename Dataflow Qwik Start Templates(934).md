@@ -18,7 +18,7 @@ passenger_count:integer -t taxirides.realtime
 
 Table 'qwiklabs-gcp-542a315588937eaa:taxirides.realtime' successfully created.
 ~~~
-> 파티션 만다는 부분 주의 <br>
+> 파티션 만드는 부분 주의 <br>
 > Console에서 만들때는 destination table을 체크하도록 되어있음 (realtime) 이 정보를 통계를 만들 때 참고하려고 그런 것인가?
 
 ## Cloud Storage
