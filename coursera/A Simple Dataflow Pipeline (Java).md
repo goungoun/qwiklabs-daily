@@ -6,7 +6,7 @@
 ## Summary
 - 자바 소스에서 import 만 필터링하여 bucket에 저장하는 예제
 
-## mvn `archetype:generate`
+## mvn archetype:generate
 ~~~bash
 git clone https://github.com/GoogleCloudPlatform/training-data-analyst
 cd ~/training-data-analyst/courses/data_analysis/lab2
