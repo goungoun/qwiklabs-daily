@@ -8,7 +8,6 @@
 ## Create VPN GateWay
 ~~~
 gcloud compute target-vpn-gateways create on-prem-gw1 --network on-prem --region us-central1
-
 gcloud compute target-vpn-gateways create cloud-gw1 --network cloud --region us-east1
 ~~~
 
