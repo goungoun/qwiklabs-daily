@@ -35,3 +35,24 @@
 - Dataproc은 서버리스가 아니기 떄문에 몇개의 노드를 쓸것인지, 어떤 사양으로 쓸 것인지, SSD는 쓸지 말지를 직접 결정해야한다.
 - 노드나 클러스터에 tag를 붙여서 방화벽을 관리하면 노드나 클러스터를 삭제했다가 다시 생성해서 IP가 변경되는 경우에도 동일한 방화벽 정책을 유지할 수 있다.
 - 클러스터에 workflow 메뉴가 있는데 어떻게 작성하는 것인지 궁금함
+> from Qwik Lab.
+~~~
+Pranay Khilari (Qwiklabs Support)
+
+Jan 6, 08:24 EST
+
+Hi Goun,
+
+Greetings!
+
+The Cloud Dataproc workflow provides a flexible and easy-to-use mechanism for managing and executing workflows. A Workflow Template is a reusable workflow configuration. It defines a graph of jobs with information on where to run those jobs.
+
+Oozie is integrated with the rest of the Hadoop stack supporting several types of Hadoop jobs out of the box (such as Java map-reduce, Streaming map-reduce, Pig, Hive, Sqoop and Distcp) as well as system specific jobs (such as Java programs and shell scripts). Currently, we do not have any specific lab related to this.
+
+Also, we would like to tell you that the lab supports HIVE CLI only. Each lab is designed for purpose to learn specific function. Beeline was developed specifically to interact with the new server. Unlike Hive CLI, which is an Apache Thrift-based client, Beeline is a JDBC client based on the SQLLine CLI — although the JDBC driver used communicates with HiveServer.
+
+Let us know if we can help you with anything else.
+
+See you in the Cloud,
+Pranay from Qwiklabs.
+~~~
