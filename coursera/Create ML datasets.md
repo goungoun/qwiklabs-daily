@@ -1,7 +1,6 @@
 # Create ML datasets
 - Levels: fundamental
 - Link: https://googlecoursera.qwiklabs.com/focuses/21305?locale=en
-- Permalink: https://googlecoursera.qwiklabs.com/catalog_lab/1383
 - Datalab Maual: https://cloud.google.com/datalab/?hl=ko
 
 ## Summary
