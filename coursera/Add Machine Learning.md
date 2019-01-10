@@ -1,7 +1,7 @@
 # Add Machine Learning
 - Coursera: Data Engineering on Google Cloud Platform
 - Levels: fundamental
-- Link: [https://googlecoursera.qwiklabs.com/catalog_lab/1362](https://googlecoursera.qwiklabs.com/focuses/21301)
+- Link: https://googlecoursera.qwiklabs.com/focuses/21301
 - Git: https://github.com/GoogleCloudPlatform/training-data-analyst/blob/master/courses/unstructured
 
 # Add Machine Learning(ML)
