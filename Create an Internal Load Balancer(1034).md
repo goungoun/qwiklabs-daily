@@ -13,10 +13,30 @@
 
 ## Firewall 설정
 - app-allow-http: Load balencer의 backend가 80 포트로부터 트래픽을 받을 수 있도록 설정
-- app-allow-health-check: 어떤 instance가 새로운 커넥션을 받을지 health check이 결정할 수 있도록 셋업. 
+- app-allow-health-check: 어떤 instance가 새로운 커넥션을 받을지 health check이 결정할 수 있도록 셋업
 > IP range에 130.211.0.0/22와 35.191.0.0/16을 설정해주는데 그 이유는?
 
-## Instance Templagte
+## Instance Template
 - An instance template is an API resource that you can use to create VM instances and managed instance groups. 
 - 두번 째 instance template을 만들 때는 첫번째 만든 것을 copy한 후 subnet-a를 subnet-b로 바꿔줌
 > Network tags의 용도: HTTP와 Health Check 방화벽 적용
+
+## Instance Group
+- instance-group-1, instance-group-2를 설정
+- Instance template에 기존에 만든 	instance-template-1과 	instance-template-2를 각각 설정
+- Autoscale을 CPU usage 기준 80%, 인스턴스 수를 1~5개, coll-down period는 45로 설정한다.
+
+## VM instances
+- These instances are in separate zones and their internal IP addresses are part of the subnet-a and subnet-b CIDR blocks.
+- micro로 vm 을 하나 더 만들어서 curl internal ip로 instance group의 동작 여부를 확인
+~~~
+curl 10.10.20.2
+curl 10.10.30.2
+~~~
+
+## Internal Load Balancer
+- Network Services > Load balancing > Create load balancer
+
+## Comment
+- 단순히 VM2개를 만들고 로드밸런서를 붙이는 예제인줄 알았는데 Instance template 기반으로 각 Instance Group에 CPU usage에 따라 동적으로 scaling 될 수 있도록 구성하는 어마어마한 Lab이었음. Good!
+
