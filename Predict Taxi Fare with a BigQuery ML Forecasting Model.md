@@ -4,7 +4,8 @@
 - https://google.qwiklabs.com/focuses/1797?parent=catalog&qlcampaign=1q-30days-806
 
 ## Summary
-- 택시비를 예측하는 머신러닝 모델
+- 택시비를 예측하는 머신러닝 모델을 빅쿼리로 만들어보자
+- Keyword: `bqml` `linear_reg`
 
 ## CheatSheet
 ~~~sql
