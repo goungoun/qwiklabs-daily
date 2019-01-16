@@ -43,6 +43,5 @@ Traceback (most recent call last):
 KeyError: 'TPU_NAME'
 ~~~
 
-
 ## Comment
 - 생성된 VM을 보면 n1-standard-2 (2 vCPUs, 7.5 GB memory)라서 뭔가 고성능의 장비는 아닌 것 같은데 Labels에 ctpu라고 적혀있음
