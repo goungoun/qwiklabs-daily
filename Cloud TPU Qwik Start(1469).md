@@ -32,5 +32,17 @@ export TPU_NAME="googleasl1721-student"
 python cloud-tpu.py
 ~~~
 
+## Trouble Shooting
+- 환경변수를 지정해주지 않으면 발생하는 에러. 예제 코드에서 `os.environ`를 사용해서 TPU_NAME을 받아오기 때문에 코드를 직접 고치기 보다는 환경변수를 export한 후 실행하여 fix
+~~~
+Traceback (most recent call last):
+  File "cloud-tpu.py", line 18, in <module>
+    tpu=[os.environ['TPU_NAME']]).get_master()
+  File "/usr/lib/python2.7/UserDict.py", line 40, in __getitem__
+    raise KeyError(key)
+KeyError: 'TPU_NAME'
+~~~
+
+
 ## Comment
 - 생성된 VM을 보면 n1-standard-2 (2 vCPUs, 7.5 GB memory)라서 뭔가 고성능의 장비는 아닌 것 같은데 Labels에 ctpu라고 적혀있음
