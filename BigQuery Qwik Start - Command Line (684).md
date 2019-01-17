@@ -57,6 +57,7 @@ Table bigquery-public-data:samples.shakespeare
 ## Comment
 - 빅쿼리의 dataset은 테이블 여러개를 묶어놓은 역할. Spark의 dataset과 개념이 많이 다름. 
 - 쿼리를 실행할 때마다 shell로 로그인/로그아웃하는 것을 반복하지 않아도 됨
+- DataLab(=Jupyter notebook)을 사용할 때도 %bq query [쿼리문]의 형태로 사용할 수 있는데 cloud shell에서도 거의 비슷한 방법이라 외우기 쉬움
 ~~~
 $ bq query "#standardSql
 SELECT word, corpus, COUNT(word) FROM \`bigquery-public-data.samples.shakespeare\`
