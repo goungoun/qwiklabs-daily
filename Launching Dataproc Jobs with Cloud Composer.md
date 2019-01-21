@@ -37,30 +37,6 @@ gcloud composer environments create demo-ephemeral-dataproc \
 
 ## 데이터 처리
 - Cloud Composer에서 Dag folder를 찾아서 예제 python code를 올려줌. 소스코드를 열어보면 DAG를 python 코드로 만드는데 DAG 안에서 클러스터를 만들고 끝나면 클러스터를 삭제하는 로직이 들어가있음. 아래는 주석
-##################################################################
-# This file defines the DAG for the logic pictured below.        #
-##################################################################
-#                                                                #
-#                       create_cluster                           #
-#                             |                                  #
-#                             V                                  #
-#                       submit_pyspark.......                    #
-#                             |             .                    #
-#                            / \            V                    #
-#                           /   \      move_failed_files         #
-#                          /     \          ^                    #
-#                          |     |          .                    #
-#                          V     V          .                    #
-#             delete_cluster     bq_load.....                    #
-#                                   |                            #
-#                                   V                            #
-#                         delete_transformed_files               #
-#                                                                #
-# (Note: Dotted lines indicate conditional trigger rule on       #
-# failure of the up stream tasks. In this case the files in the  #
-# raw-{timestamp}/ GCS path will be moved to a failed-{timestamp}#
-# path.)                                                         #
-##################################################################
 > DAG도 python이고 spark job도 python이지만 DAG의 경우 설정을 코드로 만들어놓은 느낌이라 로직 자체는 여기에 없음
 
 ## Comment
