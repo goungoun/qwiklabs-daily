@@ -43,4 +43,14 @@ python cloudiot_mqtt_example_json.py \
 ~~~
 
 ## Comment
-- 버켓에 파일이 5분뒤에 생기는 이유?
+- 버켓에 파일이 5분뒤에 생기는 이유? Dataflow의 template에 그렇게 설정되어있기 때문.
+~~~
+Hi Goun,
+
+Greetings!
+
+We want to let you know that the duration window for the default template is set as a 5 minutes. You can modify it and you can test the changes on your personal GCP account. I am sharing the Java template of the Job (https://github.com/GoogleCloudPlatform/DataflowTemplates/blob/master/src/main/java/com/google/cloud/teleport/templates/PubsubToText.java) for more information. Please let us know if you need anything else, we are here to help you.
+
+Best Regards,
+Rajat from Qwiklabs
+~~~
