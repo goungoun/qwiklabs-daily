@@ -17,7 +17,7 @@ CREATE VIEW delayed_10 AS SELECT * FROM flights WHERE dep_delay > 10;
 ~~~
 
 ## data studio
-- 모두 drag & drop 방식이라 설명으로 적을 내용이 었음
+- 모두 drag & drop 방식이라 메모할 내용이 없음
 
 ## comment
 - Data Studio는 네비게이션 메뉴에도 없고 검색으로도 나오지 않는 다는 것은 GCP의 일부가 아닌 것인가?  http://datastudio.google.com/ 로 접근하도록 되어있음.
