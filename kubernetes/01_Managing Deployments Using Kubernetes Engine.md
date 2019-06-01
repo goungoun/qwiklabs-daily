@@ -1,10 +1,10 @@
 # Managing Deployments Using Kubernetes Engine
-> https://github.com/googlecodelabs/orchestrate-with-kubernetes.git
+https://github.com/googlecodelabs/orchestrate-with-kubernetes.git
 
 ## Keyword
-Continuous Deployment, Blue-Green Deployments, Canary Deployments
-Heterogeneous deployments
-session affinity
+`Continuous Deployment`, `Blue-Green Deployments`, `Canary Deployments` <br>
+`Heterogeneous deployments` <br>
+`session affinity` <br>
 
 ## Summary
 - Create a Kubernetes cluster and deployments (Auth, Hello, and Frontend)
