@@ -159,3 +159,4 @@ wp-repd-wordpress        Bound    pvc-686a80ee-84f2-11e9-bb86-42010a8a0062   200
 - zone failure를 시뮬레이션 하는 방법이 인상적
 - kubectl get pods -l app=wp-repd-wordpress -o wide
 - deployment를 직접 만들어서 적용하지 않고 helm 패키지 매니저를 사용하는 부분에 대한 장점이 설명되어있다면 더 좋았을 것
+- PersistentVolumeClaim, StorageClass 개념을 알야야 함
