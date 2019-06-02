@@ -76,4 +76,5 @@ handlers:
 > https://cloud.google.com/solutions/distributed-load-testing-using-kubernetes
 
 ## Discussion
-- 응용하면 게임이나 IoT와 같은 복잡한 부하테스트 시나리오도 작성 가능
+- 퀵랩 실습 중에서는 가장 많은 노드(5개)와 컨테이너(replica 20개)를 사용하는 예제임
+- 응용하면 게임이나 IoT와 같은 복잡한 부하테스트 시나리오도 작성 가능하다고 함
