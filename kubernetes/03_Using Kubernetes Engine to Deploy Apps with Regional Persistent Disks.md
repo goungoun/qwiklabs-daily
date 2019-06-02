@@ -147,13 +147,13 @@ echo http://$SERVICE_IP/admin
 
 ## Helm
 - kubernetes package manager
-> Helm is a tool for managing Kubernetes charts. Charts are packages of pre-configured Kubernetes resources.
 - `kubectl get persistent volumeclaims`
 ~~~bash
 NAME                     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS       AGE
 data-wp-repd-mariadb-0   Bound    pvc-60b2f207-84f2-11e9-a6b2-42010a8a00b9   8Gi        ROX            standard           9m58s
 wp-repd-wordpress        Bound    pvc-686a80ee-84f2-11e9-bb86-42010a8a0062   200Gi      ROX            repd-west1-a-b-c   9m45s
 ~~~
+> Helm is a tool for managing Kubernetes charts. `Charts` are packages of `pre-configured` Kubernetes resources.
 
 ## Discussion
 - zone failure를 시뮬레이션 하는 방법이 인상적
