@@ -5,10 +5,9 @@
 
 ## Summary
 - 여러 컨테이너를 사용하여 간단한 REST API에 대한 부하 테스트 트래픽을 생성하는 예제
-- 노드 5개에 replica 20개 설정하여 부하를 생성
+- 노드 5개에 replica 20개 설정하여 sample application쪽에 부하를 생성
+- 시뮬레이션을 해보기 위해서 `./sample-webapp`에서 flask로 rest api 서버를 만들고 `./kubernetes-config`의 예제로 쿠버네티스 클러스터를 만들어서 rest api를 호출한다.
 ![./images/lucust.png](./images/lucust.png)
-- `./sample-webapp` sample app으로 flask를 사용한 rest api 서비스를 앱 엔진에 배포
-- `./kubernetes-config` 에 
 > https://github.com/GoogleCloudPlatform/distributed-load-testing-using-kubernetes
 
 ~~~bash
