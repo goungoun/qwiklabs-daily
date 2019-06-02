@@ -10,7 +10,6 @@
 - Kubernetes deployment with an Ingress Resource
 - Ingress Resource: rules for the inbound traffic to reach Services  `hostnames + path (optional paths)`
 - Ingress Controller: HTTP or L7 load balancer, NGINX
-![./images/ingress.png](./images/ingress.png)
 ![./images/NGINX_Ingress_Controller.png](./images/NGINX_Ingress_Controller.png)
 > https://kubernetes.io/docs/concepts/services-networking/ingress/
 
@@ -79,7 +78,7 @@ spec:
 ~~~
 
 ## NGINX
-- high performance web server—is a popular choice for an Ingress Controller 
+- High performance web server—is a popular choice for an Ingress Controller 
 - Websockets, SSL Services, Rewrites URI, Session Persistence (same request to same backend container), JWTs (JSON Web Tokens)
 
 ## Discussion
