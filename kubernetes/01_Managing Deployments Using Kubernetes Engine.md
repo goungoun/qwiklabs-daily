@@ -156,18 +156,30 @@ spec:
 ~~~
 > https://github.com/googlecodelabs/orchestrate-with-kubernetes/blob/master/kubernetes/deployments/hello-canary.yaml
 
-
 ### Blue-green Deployment
 - 다른 이름으로 배포를 하고 문제가 없으면 서비스를 새로 배포한 쪽으로 돌려주는 방법
 
 ## Discussion
 - 배포 절차 자체를 yaml로 기술해서 관리하는 접근 방식이 좋은 것 같다. 배포가 진행되는 과정을 UI로 확인하려면 무엇을 연동해야 할까?
 - Session Affinity 옵션이 canary 배포에서 소개된 이유는? rolling out이나 blue-green 배포에서는 세션을 끊어버려서 발생하지 않는 것인가?
-~~~
+
+> Question sent
 Dear support,
 
 I got a question about the explanation of session affinity. It is a way of preventing unsatisfied situations where users might experience the sudden changes by the new version during the deployment phase. I think it can be happened either rolling out or blue-green deployment process. I wonder why the session affinity concept is mentioned at canary deployment section only?
 
-See you in clouds,
+See you in the Clouds,
 Goun Na
-~~~
+
+> Answer from Sumit Mali (Qwiklabs Support)
+Hi Goun,
+
+Thanks for your suggestion!
+
+We have investigated your question or suggestion and we want to let you know that, you can use session affinity in any deployment. But in this lab we added only in the canary deployment for demo purpose.
+
+Please let us know if you have any other concern.
+
+See you in the Cloud,
+Sumit from Qwiklabs
+
