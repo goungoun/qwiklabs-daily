@@ -6,7 +6,7 @@
 `zonal resource`, `regional resource` <br>
 
 ## Summary
-> Ingress Resource에 인바운드 트래픽에 대한 규칙을 정의하여 Kubernetes deployment를 만들고 NGIX를 Ingress Controller를 적용하는 예제
+> Ingress Resource에 인바운드 트래픽에 대한 규칙을 정의하여 Kubernetes deployment를 만들고 NGIX Ingress Controller를 적용하는 예제
 - Kubernetes deployment with an Ingress Resource
 - Ingress Resource: rules for the inbound traffic to reach Services  `hostnames + path (optional paths)`
 - Ingress Controller: HTTP or L7 load balancer, NGINX
