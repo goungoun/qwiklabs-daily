@@ -80,7 +80,7 @@ spec:
           secretName: slack-token
 ~~~
 
-## Troubld Shooting
+## Trouble Shooting
 ~~~bash
 $ kubectl logs slack-codelab-8db78dc45-9r99f
 Error from server (BadRequest): container "master" in pod "slack-codelab-8db78dc45-9r99f" is waiting to start: ContainerCreating
